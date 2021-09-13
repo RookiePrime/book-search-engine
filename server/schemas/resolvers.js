@@ -9,6 +9,13 @@ const resolvers = {
         },
         books: async () => {
             return Book.find()
+        },
+        me: async (parent, args, context) => {
+            if (context.user) {
+                const userData = await User.findOne({ _id: context.user._id });
+
+                return userData;
+            }
         }
     },
     Mutation: {
