@@ -28,6 +28,14 @@ export const SAVE_BOOK = gql`
     mutation saveBook($bookInput: BookInput!) {
         saveBook(input: $bookInput) {
             username
+            savedBooks {
+                bookId
+                title
+                authors
+                image
+                description
+                link
+            }
         }
     }
 `;
@@ -36,6 +44,13 @@ export const REMOVE_BOOK = gql`
     mutation removeBook($bookId: String!) {
         removeBook(bookId: $bookId) {
             username
+            savedBooks {
+                bookId
+                title
+                authors
+                image
+                description
+            }
         }
     }
 `;
