@@ -1,7 +1,7 @@
 # BOOK SEARCH ENGINE [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
 A search engine for books, using the MERN stack and GraphQL for database access.
-[Link to live page](https://dashboard.heroku.com/apps/whispering-lake-82157/settings)
+[Link to live page](https://whispering-lake-82157.herokuapp.com/)
 ![Preview image of the application](./preview.png)
 
 ## Table of Contents
